@@ -30,3 +30,21 @@ if (isValid) {
 let age = "25";
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+let result = "5" - 2;
+console.log("The result is: " + result);// 3
+
+let isValid = Boolean("false");
+if (isValid) {
+    console.log("This is valid!");// This is valid!
+}
+
+let age = "25";
+let totalAge = Number(age) + Number("5");// Explicitly converting the string "25" and "5" to numbers before addition
+console.log("Total Age: " + totalAge);// Total Age: 30
+
+console.log(null == undefined); // true, because both are considered equal in loose equality comparison
+
+let result = Number("Apple");
+console.log(result); // NaN, because "Apple" cannot be converted to a number
+console.log(typeof result); // "number", because NaN is of type number
